@@ -52,13 +52,11 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am the group management bot of FOCUS MOVIES .. You guys can't use me or add me to groups.........
+ഞാൻ ഒരു ഗ്രൂപ്പ്‌ മാനേജർ ബോട്ട് ആണ്, പക്ഷെ വെറുതെ സമയം കളയേണ്ട എന്നെ @Film_Kottaka എന്ന ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ..........
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm Dr Stone & I help admins to manage their groups! Have a look at the following for an idea of some of \
-the things I can help you with.
+Hey there! My name is *{}*. I can do multiple things..
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -213,13 +211,7 @@ def start(update: Update, context: CallbackContext):
                             text=" ⚡️ Group ",
                              url="https://t.me/Film_kottaka")        
                        
-                     ],
-                     [
-                        InlineKeyboardButton(
-                             text=" ❤️ Source Code ",
-                             url="https://github.com/ALENTL/FM-RASHMIKABOT")
-                    
-                    ]]))
+                     ]]))
     else:
         update.effective_message.reply_text(
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
