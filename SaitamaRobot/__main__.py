@@ -73,7 +73,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/046df2c8c51f9f53abfe6.jpg"
+SAITAMA_IMG = "https://static.alphacoders.com/desktops/21088.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 RASHMIKA is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -211,7 +211,13 @@ def start(update: Update, context: CallbackContext):
                             text=" ⚡️ Group ",
                              url="https://t.me/Film_kottaka")        
                        
-                     ]]))
+                     ],
+                     [
+                        InlineKeyboardButton(
+                             text=" ❤️ Source Code ",
+                             url="https://github.com/ALENTL/FILMKOTTAKA-BOT")
+                    
+                    ]]))
     else:
         update.effective_message.reply_text(
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
